@@ -11,4 +11,7 @@ GLvoid init (void);
 
 GLvoid update (LONGLONG diff);
 
+void onKeydown (WORD vkCode);
+void onKeyup (WORD vkCode);
+
 #endif

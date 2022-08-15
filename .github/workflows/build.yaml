@@ -1,9 +1,9 @@
 name: build
 on: [push]
 jobs:
-	try-to-build:
-		runs-on: windows-latest
-		steps:
-			- uses: actions/checkout@v3
-			- uses: nicledomaS/cmake_build_action@v1.4
+  try-to-build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: nicledomaS/cmake_build_action@v1.4
 

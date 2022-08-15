@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: nicledomaS/cmake_build_action@v1.4
-          with:
-            path: 2d-example/
+        with:
+          path: 2d-example/
 

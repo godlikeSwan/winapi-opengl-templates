@@ -33,6 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./bin/2d.exe
+          asset_path: ./2d-example/bin/2d.exe
           asset_name: 2d.exe
           asset_content_type: application/vnd.microsoft.portable-executable

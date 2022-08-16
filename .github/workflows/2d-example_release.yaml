@@ -1,5 +1,8 @@
 name: winapi-opengl-2d-example release
-on: [push]
+on:
+  push:
+    tags:
+      - 'v*'
 jobs:
   build-and-upload:
     runs-on: windows-latest
@@ -10,6 +13,7 @@ jobs:
           cd 2d-example
           cmake .
           cmake --build .
+
       - name: create release
         id: create_release
         uses: actions/create-release@latest
